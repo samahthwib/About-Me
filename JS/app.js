@@ -6,72 +6,84 @@
 //console.log('Welcome to my website '+ yourName);
 
 var score=0;
-var myName = prompt('Do you know my name ? ').toUpperCase();
-//console.log(myName);
-if (myName === 'YES' || myName === 'Y') {
-// alert(myName + ' You Know me!  ' );
-  score++;
-} else if (myName === 'NO' || myName === 'N') {
-// alert(myName + ' You Don\'t know me , but now you will know me later');
-} else {
-  alert('Nothing');
+
+
+function userName (){
+  var myName = prompt('Do you know my name ? ').toUpperCase();
+  //console.log(myName);
+  if (myName === 'YES' || myName === 'Y') {
+    // alert(myName + ' You Know me!  ' );
+      score++;
+    } else if (myName === 'NO' || myName === 'N') {
+    // alert(myName + ' You Don\'t know me , but now you will know me later');
+    } else {
+      alert('Nothing');
+    }
 }
+userName();
 
-var bachelorsMajor= prompt(' Do you know what is my major in the university? ').toUpperCase();
-//console.log(bachelorsDegree);
-if (bachelorsMajor === 'YES' || bachelorsMajor === 'Y') {
-// alert(bachelorsDegree +'You are right' );
-  score++;
-} else if (bachelorsMajor === 'NO' || bachelorsMajor === 'N') {
-//alert(bachelorsDegree + ' you will know it later ');
-} else{
-  alert('Nothing');
+function uniStudy(){
+  var bachelorsMajor= prompt(' Do you know what is my major in the university? ').toUpperCase();
+
+  if (bachelorsMajor === 'YES' || bachelorsMajor === 'Y') {
+  // alert(bachelorsMajor +'You are right' );
+    score++;
+  } else if (bachelorsMajor === 'NO' || bachelorsMajor === 'N') {
+  // alert(bachelorsMajor + ' you will know it later ');
+  } else{
+    alert('Nothing');
+  }
+  // console.log(bachelorsMajor);
 }
+uniStudy();
 
-var loveLearning = prompt('Do you know what I\'m studying know? ').toUpperCase();
-//console.log(loveLearning);
-if (loveLearning === 'YES' || loveLearning === 'Y') {
-// alert( loveLearning +' great! you are doing fine' );
-  score++;
-} else if (loveLearning === 'NO' || loveLearning === 'N') {
-  //alert(loveLearning + ' Not a problem ');
-} else {
-  alert('Nothing');
+function funLearning(){
+  var loveLearning = prompt('Do you know what I\'m studying know? ').toUpperCase();
+  //console.log(loveLearning);
+  if (loveLearning === 'YES' || loveLearning === 'Y') {
+  // alert( loveLearning +' great! you are doing fine' );
+    score++;
+  } else if (loveLearning === 'NO' || loveLearning === 'N') {
+    // alert(loveLearning + ' Not a problem ');
+  } else {
+    alert('Nothing');
+  }
 }
+funLearning();
 
-var myHoppy = prompt('Do you know what is my hoppy ? ').toUpperCase();
-//console.log(myHoppy);
-if (myHoppy === 'YES' || myHoppy === 'Y') {
-// alert(myHoppy + ' Wow! you are amazing' );
-  score++;
-} else if (myHoppy === 'NO' || myHoppy === 'N') {
-// alert(myHoppy + ' sorry you are wrong');
-} else {
-  alert('Nothing');
+function myIntrest(){
+  var myHoppy = prompt('Do you know what is my hoppy ? ').toUpperCase();
+  //console.log(myHoppy);
+  if (myHoppy === 'YES' || myHoppy === 'Y') {
+  // alert(myHoppy + ' Wow! you are amazing' );
+    score++;
+  } else if (myHoppy === 'NO' || myHoppy === 'N') {
+  // alert(myHoppy + ' sorry you are wrong');
+  } else {
+    alert('Nothing');
+  }
 }
+myIntrest();
 
 
 
-var myAge = prompt('Do you know how old am I ? ').toUpperCase();
-//console.log(myAge);
-switch (myAge) {
-case 'YES':
-case 'Y':
-  //alert(' Yeaaah , you are right!');
-  score++;
-  break;
-case 'NO': // like (or) on if statements
-case 'N':
-  //alert(' it\'s wrong!');
-  break;
-default:
-  alert('nothing !');
-  break;
+function oldAge(){
+  var myAge = prompt('Do you know how old am I ? ').toUpperCase();
+  if (myAge === 'YES' || myAge === 'Y') {
+        // alert(' Yeaaah , you are right!');
+        score++;
+      } else if (myAge === 'NO' || myAge === 'N') {
+      //alert(' it\'s wrong!');
+      } else {
+        alert('Nothing');
+      }
 }
+oldAge();
 
 
-// var travelTo = prompt('Do you know how many countries I traveled to ? ').toUpperCase();
+var travelTo = prompt('Do you know how many countries I traveled to ? ').toUpperCase();
 
+function flyLove(travelNumber){
 
 for (let i = 0; i<= 3; i++) {
   var travelNumber = parseInt(prompt('How many countries I traveled to ? you have just 4 attempt .Be careful'));
@@ -107,10 +119,11 @@ for (let i = 0; i<= 3; i++) {
     travelNumber=alert('The correct answer is : 3');
   }
 }
+}
+flyLove();
 
 
-
-
+function aroundWorld (){
 for(var j=0 ; j < 6 ; j++){
   var favCountries = ['palestine' , 'turkey' , 'jordan' , 'italy'];
   for(var x = 0; x < favCountries.length ; x = x+1){
@@ -150,5 +163,6 @@ for(var j=0 ; j < 6 ; j++){
     }
   }
 }
-
+}
+aroundWorld();
 alert('your score is ' + score);
