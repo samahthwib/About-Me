@@ -3,46 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <title>Samah Thweib</title>
 
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 </head>
 <body>
-    <h1>Samah Thweib</h1>
+        <header class='my-header'>
+            <h1 class="my-name">Samah Thweib</h1>
+            <nav class="navBar">   
+                <ul>
+                <li ><a  href="#Home">Home</a></li>
+                <li ><a href="#About">About</a></li>
+                <li ><a href="#my-skills">My Skills</a></li> 
+                <li ><a href="#Contact">Contact</a></li>  
+                            
+                </ul>
+            </nav>
+          
+                    
+        </header>
 
-     <header>
-        
-   
-            <ul class="navBar">
-              <li ><a  href="index.html">Home</a></li>
-              <li ><a href="index2.html">Contact us</a></li>
-              <li ><a href="index3.html">Login</a></li>
-              
-            </ul>
+
+        <main>
        
+            <section id="Home">
+                    <p class="hi-people"> Hi, I am </p>
+                    <h2 class="my-name2">Samah Thweib</h2>
+                    <p class="myBlog"> I am a Front-End Developer </p>
+
+
+                   
+                    <a href="https://drive.google.com/open?id=1FRGkjelZnm81Hf7YErtCAM_HyDKxaJXV" target="_blank" download="w3logo">
+                        <button class="butt"><i class="fa fa-download"></i> My Resume</button>
+                      </a>
+                      <div class="icon-bar">
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+                      </div>
+                   
+                </section>
+
+
+            <section id="About">
+
+                <h2 class="about-me">About Me</h2>
+            <div class="about-list">
+                <h3>Samah Thweib
+                </h3>
+                        <p> I'm a fresh graduate from the University of Jordan. 
+                             I studied computer engineering . Aim to obtain a solid Knowledge in my field of specialization
+                            and investing that knowledge in a motivating encouraging professional environment to achieve 
+                            a great success in the future.</div>
+                    <div class="about-list">
+                       
+                                <p class="about1-list">Now I'm Studying advanced coding in the LTUC-Abdul 
+                                    Aziz Al-Gurair School for Advanced Computing. When the course finish I hope to start my career.
+                                    Designing and modeling on Cinema 4D one of my interests , so i love game-development.   </p>
+                        </div>
+
+                <img  src="image/me2.png" alt="Samah" >
+                <i class="fa fa-envelope" >
+                samah.thweib@hotmail.com
+                </i>
+
+                <i class="fa fa-map-o">
+                Jordan-Amman , Al-bunayyat   
+                </i>
+
+                <i class="fa fa-mortar-board" >
+                    The University of Jordan
+                </i>
+                <i class="fa fa-mobile-phone">
+                    0797590362
+                </i>
+                </section>
+
+        <section id="my-skills">
+            <h2>My Skills</h2>
+
+            <p>HTML</p>
+            <div class="my-skill">
+              <div class="skills html">80%</div>
+            </div>
             
-                
-                
-     </header>
-     <main>
-       
-        <p class="myBlog"> Welcome to my blog </p>
-         <ul class="myInfo">
-             <li> my name is Samah Thweib , 24 years old .</li>
-             <li> I'm a fresh graduate from the University of Jordan. I studied computer engineering .</li>
-             <li> I aim to obtain a solid Knowledge in my field of specialization and investing that knowledge in a motivating encouraging professional environment to achieve 
-                a great success in the future.</li>
-             <li> Now I'm Studying advanced coding in the LTUC-Abdul Aziz Al-Gurair School for Advanced Computing. When the course finish I hope to start my career.</li>
-             <li> Designing and modeling on Cinema 4D one of my interests , so i love game-development.</li>
-             
-        
-         </ul>
+            <p>CSS</p>
+            <div class="my-skill">
+              <div class="skills css">85%</div>
+            </div>
+            
+            <p>JavaScript</p>
+            <div class="my-skill">
+              <div class="skills js">50%</div>
+            </div>
+            
+            <p>C++</p>
+            <div class="my-skill">
+              <div class="skills c">55%</div>
+            </div>
 
-         <img src="image/Me.jpg" alt="Samah" >
+            <p>Matlab</p>
+            <div class="my-skill">
+              <div class="skills matlab">60%</div>
+            </div>
 
-         <p class="myFavo"> Top Ten Favourit Books</p>
+            <p>Network</p>
+            <div class="my-skill">
+              <div class="skills network">65%</div>
+            </div>
+         
+        </section>
+         <!-- <p class="myFavo"> Top Ten Favourit Books</p>
          <ol class="myTopTen">
              <li>What I Know For Sure</li>
              <li>The Origin of Space</li>
@@ -54,13 +134,12 @@
              <li>Candide</li>
              <li>Love</li>
              <li>The Smartes Kids in the World</li>
-         </ol>
+         </ol> -->
         
          
-        
-         
+                 
      </main>
-     <footer>
+     <footer id="Contact">
         <p>copy right for Samah Thweib</p>
     </footer>
 
