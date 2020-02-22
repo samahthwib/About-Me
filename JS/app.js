@@ -15,7 +15,8 @@ if (myName === 'YES' || myName === 'Y') {
   alert(myName + ' You Know me!  ' );
   score++;
 } else if (myName === 'NO' || myName === 'N') {
-  alert(myName + ' You Don\'t know me , but now you will know me ');
+  alert(myName + ' You Don\'t know me  ');
+  alert('I\'m Samah Thweib');
 } else {
   alert('Nothing');
 }
@@ -24,6 +25,7 @@ var bachelorsMajor= prompt(' Do you know if my major in the university is  a com
 //console.log(bachelorsDegree);
 if (bachelorsMajor === 'YES' || bachelorsMajor === 'Y') {
   alert(bachelorsMajor +' You are wrong' );
+  alert('I studied Computer Engineering ');
 } else if (bachelorsMajor === 'NO' || bachelorsMajor === 'N') {
   alert(bachelorsMajor + ' bravo, my major is computer engineering ');
   score++;
@@ -38,6 +40,7 @@ if (loveLearning === 'YES' || loveLearning === 'Y') {
   score++;
 } else if (loveLearning === 'NO' || loveLearning === 'N') {
   alert(loveLearning + ' sorry , wrong answer ');
+  alert('I\'m Studying advanced coding in the LTUC-Abdul Aziz Al-Gurair School ');
 } else {
   alert('Nothing');
 }
@@ -49,6 +52,7 @@ if (myHoppy === 'YES' || myHoppy === 'Y') {
   score++;
 } else if (myHoppy === 'NO' || myHoppy === 'N') {
   alert(myHoppy + ' sorry you are wrong');
+  alert(myHoppy + ' Designing and modeling on Cinema 4D one of my interests , so i love game-development.');
 } else {
   alert('Nothing');
 }
@@ -61,6 +65,7 @@ switch (myAge) {
 case 'YES':
 case 'Y':
   alert(' it\'s wrong!');
+  alert(' 24 is the right answer');
   break;
 case 'NO': // like (or) on if statements
 case 'N':
@@ -149,9 +154,14 @@ for(var j=0 ; j < 6 ; j++){
     default:
       alert('False !');
       x=favCountries.length;
+     
       break;
     }
+    if(j===5){
+      alert('jordan , Turkey , palestine , italy are my favourite countries');
+    }
   }
+ 
 }
 
-alert('your score is ' + score);
+alert('your score is ' + score + '/7');
