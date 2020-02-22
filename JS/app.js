@@ -158,7 +158,7 @@ for(var j=0 ; j < 6 ; j++){
       break;
     }
     if(j===5){
-      alert('jordan , Turkey , palestine , italy are my favourite countries');
+      alert('jordan , Turkey , palestine , italy there are my favourite countries');
     }
   }
  
